@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hacksparo Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            border-bottom: 2px solid #00ff00;
+            padding: 10px;
+        }
+        .navbar a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .arrow-back {
+            color: #00ff00;
+            font-size: 24px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .arrow-back:hover {
+            color: #00cc00;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-top: 2px solid #00ff00;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #0d0d0d;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        .contact-form textarea {
+            width: 100%;
+            background-color: #1a1a1a;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            resize: none;
+        }
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #00cc00;
+        }
+        .contact-form a button {
+            background-color: #00ff00;
+            color: #0a0a0a;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        .contact-form a button:hover {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="navbar">
+        <nav class="container mx-auto flex justify-center">
+            <a href="../../">&#8592; Back</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <section class="contact-form">
+            <h1 class="text-center text-3xl font-semibold mb-4">Contact</h1>
+            <textarea rows="10" placeholder="Your message..."></textarea>
+            <a href="https://x.com/hack_sparo" target="_blank">
+                <button class="mt-4">Contact Me</button>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Hacksparo Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
